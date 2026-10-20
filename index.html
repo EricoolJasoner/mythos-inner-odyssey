@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1c1d">
+  <meta name="description" content="21 道选择，遇见你的神话原型。读十二位人物的故事，结合自己的 MBTI 看工作、关系与成长的深入对照。">
+  <link rel="canonical" href="https://ericooljasoner.github.io/mythos-inner-odyssey/">
+  <meta property="og:title" content="MYTHOS · 你是哪一位神话中的自己？">
+  <meta property="og:description" content="21 道选择 · 12 个神话故事 · 神话 × MBTI 深入对照。无需注册，点开即测。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://ericooljasoner.github.io/mythos-inner-odyssey/">
+  <meta property="og:image" content="https://ericooljasoner.github.io/mythos-inner-odyssey/assets/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>MYTHOS · 神话中的你</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至内容</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="MYTHOS 首页"><span class="brand-symbol" aria-hidden="true">✦</span><span>MYTHOS<small>神 话 人 格 图 鉴</small></span></a>
+    <nav aria-label="主导航"><a href="#archetypes" data-atlas-link>十二原型</a><button class="text-btn" data-method>关于测试</button><button class="nav-cta" data-start>开启探索 <span aria-hidden="true">↗</span></button></nav>
+  </header>
+  <main id="main">
+    <div id="home-view">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" role="img" aria-label="雅典娜、赫尔墨斯与珀耳塞福涅的古典雕塑群像"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="mini-line"></span> AN INNER ODYSSEY</div>
+          <h1 id="hero-title">你是哪一位<br>神话中的<span class="gold">自己</span>？</h1>
+          <p class="hero-subtitle">每一种天赋，都藏着自己的命运。</p>
+          <p class="hero-description">在十二个古老的故事里，<br>看见你的锋芒、软肋，和下一次转身。</p>
+          <p class="hero-mbti-note">NEW · 神话 × MBTI，打开另一层性格对照</p>
+          <button class="button button-gold hero-button" data-start><span data-start-label>寻找我的神话原型</span><span class="arrow" aria-hidden="true">↗</span></button>
+          <div class="hero-micro"><span class="small-star">✦</span> 无需注册 <i></i> 答案只保存在此设备</div>
+        </div>
+        <div class="hero-caption"><span>THE MYTH WITHIN YOU</span><span>VOL. 01 — THE PANTHEON</span></div>
+        <a class="scroll-cue" href="#archetypes" aria-label="向下探索十二原型">向下探索 <span aria-hidden="true">↓</span></a>
+      </section>
+      <section class="facts" aria-label="测试概览">
+        <div><span class="fact-number">12</span><span>神话原型<small>ARCHETYPES</small></span></div>
+        <div><span class="fact-number">21</span><span>直觉选择<small>MOMENTS OF TRUTH</small></span></div>
+        <div><span class="fact-number">4–6<em>min</em></span><span>留给自己<small>A MOMENT FOR YOU</small></span></div>
+        <p>神话很古老。<br><span>而你，正在发生。</span></p>
+      </section>
+      <section id="archetypes" class="atlas section-light" aria-labelledby="atlas-title">
+        <div class="section-top"><span class="eyebrow">THE TWELVE ARCHETYPES</span><span class="edition">十二种天赋 · 十二种人生隐喻</span></div>
+        <div class="section-heading"><h2 id="atlas-title">众神有缺口。<br>你也因此独一无二。</h2><p>智慧也会孤独，自由也会漂泊。<br>每位人物，都有让他发光的天赋，<br>和一道需要自己回答的命题。</p></div>
+        <div id="archetype-grid" class="archetype-grid"></div>
+        <div class="atlas-foot"><span>人物性别不限制结果。你遇见的是一种故事模式。</span><button class="text-btn dark-link" id="poster-download">收藏十二原型海报 <span aria-hidden="true">↓</span></button></div>
+      </section>
+      <section class="invitation">
+        <div class="eyebrow">A MIRROR, NOT A PROPHECY</div><span class="invitation-star" aria-hidden="true">✧</span>
+        <h2>神话是镜子。<br>下一幕，由你来写。</h2>
+        <p>从日常选择走进自己的故事。<br>看见惯常的方式，也为另一种可能留一扇门。</p>
+        <button class="button button-gold" data-start>开始这场自我探索 <span aria-hidden="true">↗</span></button>
+        <button class="text-btn share-site-button" data-share-site>把测试发给朋友 ↗</button>
+      </section>
+    </div>
+    <section id="quiz-view" class="quiz-view" hidden aria-labelledby="question-title">
+      <div class="quiz-top"><button class="text-btn" id="pause-quiz">← 暂存并返回</button><span>YOUR INNER ODYSSEY</span><span id="quiz-count">01 / 21</span></div>
+      <div class="progress-track" role="progressbar" aria-label="答题进度" aria-valuemin="0" aria-valuemax="21" aria-valuenow="0"><div id="quiz-progress"></div></div>
+      <div class="quiz-layout"><aside class="quiz-aside"><div class="eyebrow" id="chapter-label"></div><div id="chapter-number" class="chapter-number"></div><div class="aside-rule"></div><p id="chapter-copy"></p><div class="chapter-steps" id="chapter-steps"></div></aside><div class="question-area"><span class="eyebrow" id="question-theme"></span><h1 id="question-title" tabindex="-1"></h1><p class="question-hint">选择更接近此刻的你的一项，不必寻找完美答案。</p><fieldset id="answer-options"><legend class="sr-only">请选择一个答案</legend></fieldset><div class="question-footer"><button class="text-btn" id="previous-question">← 上一题</button><span class="keyboard-hint">A–D 选择 · Enter 继续</span><button class="button button-gold" id="next-question" disabled>下一题 <span aria-hidden="true">→</span></button></div><p class="quiz-save-note" id="quiz-save-note">进度自动保存在此设备，可随时返回修改。</p></div></div>
+    </section>
+    <section id="result-view" hidden></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#">MYTHOS <span>认识你自己</span></a><p>神话叙事 × MBTI 偏好对照<br><span>独立自我探索作品，非官方 MBTI 测评、心理诊断或命运预测。</span></p><button class="text-btn" data-method>设计与隐私 ↗</button></footer>
+  <dialog id="detail-dialog" class="detail-dialog" aria-label="神话原型详情"><button class="dialog-close" data-close aria-label="关闭详情">×</button><div id="detail-content"></div></dialog>
+  <dialog id="method-dialog" class="method-dialog" aria-labelledby="method-title"><button class="dialog-close" data-close aria-label="关闭说明">×</button><span class="eyebrow">BEHIND THE MYTH</span><h2 id="method-title">读懂这面镜子</h2><div class="method-copy"><h3>从选择，到故事</h3><p>18 道情境题与 3 道命运主题题，组成这次探索。前 18 题每个答案为主要人物加 2 分、次要人物加 1 分；后 3 题为一个人物加 3 分。结果沿用这套叙事评分规则，不代表经心理测量验证的人格分类。</p><h3>接近的分数，可以共存</h3><p>总分相同时，先比较命运题得分。仍相同时保留并列；前列分差不超过 2 分时呈现接近的倾向。次高分表示另一种可能的反应方式，不直接推断你的潜意识或“阴影”。</p><h3>让答案有出处</h3><p>结果引用你确实选择的选项。神话情节与现代心理隐喻分开书写，未来只作条件式探索。古代神话存在不同版本；你可以认同某一段，也可以保留不同意见。</p><h3>不把故事说成科学</h3><p>十二人是本作品的策展选择，并非荣格本人提出的一套十二型体系。主得分机会相同不保证测出概率相同，题目仍有次得分频次与选项吸引力的差异。分数用于组织故事，不是准确率；不据最低分判断你与谁相克。</p><h3>神话与 MBTI，各有依据</h3><p>你可以选择自己已知或自我认同的 MBTI 类型。四组偏好用于对照工作、关系与日常习惯，不参与神话计分，也不由这 21 题反推；不存在“某位神等于某种类型”的固定对应。不知道类型时，可以先阅读四组生活反思。</p><h3>答案留在你的设备</h3><p>无需账号，无追踪脚本，不上传答题记录。进度与自选的 MBTI 类型仅存于当前浏览器本地；清除浏览器数据或点击下方按钮即可移除。分享卡只包含结果摘要，不包含原始答案。</p><button class="button button-outline" id="clear-progress">清除本地答题记录</button><p class="method-version">MYTHOS · 叙事探索版 1.2 · 神话 × MBTI</p></div></dialog>
+  <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-title"><button class="dialog-close" data-close aria-label="关闭图片预览">×</button><span class="eyebrow">KEEP YOUR MYTH</span><h2 id="export-title">把这张神话留给自己</h2><p id="export-status" role="status"></p><img id="export-image" width="1080" height="1600" alt="神话结果卡" hidden><a id="export-download" class="button button-gold" download hidden>下载图片 ↓</a></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./assets/assets.js"></script>
+  <script src="./assets/data.js"></script><script src="./assets/stories.js"></script>
+  <script src="./assets/scoring.js"></script><script src="./assets/mbti.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
